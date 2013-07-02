@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('MediaDepositoryApp', [])
+angular.module('MediaDepositoryApp', ['ngResource'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -10,4 +10,5 @@ angular.module('MediaDepositoryApp', [])
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+
