@@ -11,4 +11,8 @@ angular.module('MediaDepositoryApp', ['ngResource'])
         redirectTo: '/'
       });
   })
-
+  
+  // Disabled CORS error
+  .config(function($httpProvider){
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+  });
