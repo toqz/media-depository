@@ -12,7 +12,7 @@ angular.module('MediaDepositoryApp', ['ngResource'])
       });
   })
   
-  // Disabled CORS error
+  // Temporarily get rid of CORS error
   .config(function($httpProvider){
     delete $httpProvider.defaults.headers.common['X-Requested-With'];
   });
