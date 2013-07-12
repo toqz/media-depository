@@ -1,0 +1,1 @@
+"use strict";var MediaDepository=angular.module("MediaDepositoryApp",[])||{};MediaDepository.config(function(a){a.when("/",{templateUrl:"views/main.html",controller:"MainCtrl"}).otherwise({redirectTo:"/"})}),MediaDepository.controller("MainCtrl",function(a){a.awesomeThings=["HTML5 Boiler","Angul","Karms"]});
