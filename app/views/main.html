@@ -13,17 +13,18 @@
 
             <input type="text" name="" value="" placeholder="" ng-model="source" />
             
-            <input type="submit" name="Save" value="Save">
+            <input type="button" name="search" value="search">
 
             <ul>
-                <li class="media" ng-repeat="book in books">
+                <li><h4>{{ books.src }}</h4></li> 
+                <li class="media" ng-repeat="book in books.items">
                     <a class="pull-left" href="{{ book.volumeInfo.canonicalVolumeLink }}" target="_blank">
                         <img class="media-object" src="{{ book.volumeInfo.imageLinks.smallThumbnail }}">
                         <input type="checkbox" />
                     </a>
                     <div class="media-body">
                         <h4 class="media-heading">{{ book.volumeInfo.title }}</h4>
-                        <p>{{ book.volumeInfo.description }}</p>
+                        <p>book.volumeInfo.description</p>
                     </div>
                 </li>
             </ul><!-- #books list -->

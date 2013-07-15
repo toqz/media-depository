@@ -1,0 +1,13 @@
+{
+  "sources":[
+    {
+      "name": "google",
+      "url": "https://www.googleapis.com/books/v1/volumes?q=dan+brown",
+      "local": "google_books.json"
+    },
+    {
+      "name": "source name",
+      "src": "source url",
+      "local": "local url"
+    }]
+}

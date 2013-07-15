@@ -1,0 +1,648 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 768,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "ivzfRJGrdFsC",
+      "etag": "4m+tlBPG4FE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ivzfRJGrdFsC",
+      "volumeInfo": {
+        "title": "The Da Vinci Code",
+        "subtitle": "(Robert Langdon Book 2)",
+        "authors": [
+          "Dan Brown"
+        ],
+        "publisher": "Random House",
+        "publishedDate": "2010-07-06",
+        "description": "Contains a sneak preview of Inferno, Dan Brown's astonishing new Robert Langdon thriller. Harvard professor Robert Langdon receives an urgent late-night phone call while on business in Paris: the elderly curator of the Louvre has been brutally murdered inside the museum. Alongside the body, police have found a series of baffling codes. As Langdon and a gifted French cryptologist, Sophie Neveu, begin to sort through the bizarre riddles, they are stunned to find a trail that leads to the works of Leonardo Da Vinci - and suggests the answer to a mystery that stretches deep into the vault of history. Unless Langdon and Neveu can decipher the labyrinthine code and quickly assemble the pieces of the puzzle, a stunning historical truth will be lost forever...",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1409091155"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781409091158"
+          }
+        ],
+        "pageCount": 592,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 3192,
+        "contentVersion": "0.6.5.0.preview.2",
+        "imageLinks": {
+          "smallThumbnail": "http://bks0.books.google.com/books?id=ivzfRJGrdFsC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://bks0.books.google.com/books?id=ivzfRJGrdFsC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=ivzfRJGrdFsC&dq=dan+brown&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=ivzfRJGrdFsC&dq=dan+brown&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/The_Da_Vinci_Code.html?hl=&id=ivzfRJGrdFsC"
+      },
+      "saleInfo": {
+        "country": "SG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "SG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=ivzfRJGrdFsC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "NONE"
+      },
+      "searchInfo": {
+        "textSnippet": "As Langdon and a gifted French cryptologist, Sophie Neveu, begin to sort through the bizarre riddles, they are stunned to find a trail that leads to the works of Leonardo Da Vinci - and suggests the answer to a mystery that stretches deep ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "j_yuLnfxjFwC",
+      "etag": "QrUKxnGyVyU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/j_yuLnfxjFwC",
+      "volumeInfo": {
+        "title": "The Lost Symbol",
+        "authors": [
+          "Dan Brown"
+        ],
+        "publisher": "Random House",
+        "publishedDate": "2010-07",
+        "description": "The Capitol Building, Washington DC: Harvard symbologist Robert Langdon believes he is here to give a lecture. He is wrong. Within minutes of his arrival, a shocking object is discovered. It is a gruesome invitation into an ancient world of hidden wisdom. When Langdon's mentor, Peter Solomon - prominent mason and philanthropist - is kidnapped, Langdon realizes that his only hope of saving his friend's life is to accept this mysterious summons. It is to take him on a breathless chase through Washington's dark history. All that was familiar is changed into a shadowy, mythical world in which Masonic secrets and never-before-seen revelations seem to be leading him to a single impossible and inconceivable truth...",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0552149527"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780552149525"
+          }
+        ],
+        "pageCount": 672,
+        "printType": "BOOK",
+        "categories": [
+          "Cryptographers"
+        ],
+        "averageRating": 3,
+        "ratingsCount": 963,
+        "contentVersion": "0.8.3.0.preview.0",
+        "imageLinks": {
+          "smallThumbnail": "http://bks3.books.google.com/books?id=j_yuLnfxjFwC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://bks3.books.google.com/books?id=j_yuLnfxjFwC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=j_yuLnfxjFwC&dq=dan+brown&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=j_yuLnfxjFwC&dq=dan+brown&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/The_Lost_Symbol.html?hl=&id=j_yuLnfxjFwC"
+      },
+      "saleInfo": {
+        "country": "SG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "SG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=j_yuLnfxjFwC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "NONE"
+      },
+      "searchInfo": {
+        "textSnippet": "The Capitol Building, Washington DC: Harvard symbologist Robert Langdon believes he is here to give a lecture."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "BjFZ0UQOUCgC",
+      "etag": "utFzjE9JZUM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/BjFZ0UQOUCgC",
+      "volumeInfo": {
+        "title": "Deception Point",
+        "authors": [
+          "Dan Brown"
+        ],
+        "publisher": "Simon and Schuster",
+        "publishedDate": "2006-03-28",
+        "description": "On the eve of a presidential race in which NASA's budget is a pivotal issue, the space agency announces the discovery of an ancient meteorite filled with fossils deep in the Arctic ice.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1416524800"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781416524809"
+          }
+        ],
+        "pageCount": 752,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 2561,
+        "contentVersion": "1.5.5.0.preview.2",
+        "imageLinks": {
+          "smallThumbnail": "http://bks5.books.google.com/books?id=BjFZ0UQOUCgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://bks5.books.google.com/books?id=BjFZ0UQOUCgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=BjFZ0UQOUCgC&printsec=frontcover&dq=dan+brown&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=BjFZ0UQOUCgC&dq=dan+brown&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Deception_Point.html?hl=&id=BjFZ0UQOUCgC"
+      },
+      "saleInfo": {
+        "country": "SG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "SG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Deception_Point-sample-epub.acsm?id=…gC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=BjFZ0UQOUCgC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE"
+      },
+      "searchInfo": {
+        "textSnippet": "On the eve of a presidential race in which NASA&#39;s budget is a pivotal issue, the space agency announces the discovery of an ancient meteorite filled with fossils deep in the Arctic ice."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "9nloexmq6QsC",
+      "etag": "CtSLJzh2xDU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/9nloexmq6QsC",
+      "volumeInfo": {
+        "title": "Inferno",
+        "subtitle": "A Novel",
+        "authors": [
+          "Dan Brown"
+        ],
+        "publisher": "Random House Digital, Inc.",
+        "publishedDate": "2013-05-14",
+        "description": "In his international blockbusters The Da Vinci Code, Angels & Demons, and The Lost Symbol, Dan Brown masterfully fused history, art, codes, and symbols. In this riveting new thriller, Brown returns to his element and has crafted his highest-stakes novel to date. In the heart of Italy, Harvard professor of symbology Robert Langdon is drawn into a harrowing world centered on one of history’s most enduring and mysterious literary masterpieces . . . Dante’s Inferno. Against this backdrop, Langdon battles a chilling adversary and grapples with an ingenious riddle that pulls him into a landscape of classic art, secret passageways, and futuristic science. Drawing from Dante’s dark epic poem, Langdon races to find answers and decide whom to trust . . . before the world is irrevocably altered.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0385537867"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780385537865"
+          }
+        ],
+        "pageCount": 480,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 2.5,
+        "ratingsCount": 136,
+        "contentVersion": "1.4.3.0.preview.2",
+        "imageLinks": {
+          "smallThumbnail": "http://bks8.books.google.com/books?id=9nloexmq6QsC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://bks8.books.google.com/books?id=9nloexmq6QsC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=9nloexmq6QsC&dq=dan+brown&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=9nloexmq6QsC&dq=dan+brown&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Inferno.html?hl=&id=9nloexmq6QsC"
+      },
+      "saleInfo": {
+        "country": "SG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "SG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=9nloexmq6QsC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "NONE"
+      },
+      "searchInfo": {
+        "textSnippet": "In this riveting new thriller, Brown returns to his element and has crafted his highest-stakes novel to date."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "7aPqemZwoi4C",
+      "etag": "69FOTwnuKxs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/7aPqemZwoi4C",
+      "volumeInfo": {
+        "title": "Dan Brown's Road to Success",
+        "subtitle": "An Unauthorized Biography of the Creator of The Da Vinci Code",
+        "authors": [
+          "D. M. Brown"
+        ],
+        "publisher": "Lulu.com",
+        "publishedDate": "2005",
+        "description": "Dan Brown shocked the world with his fourth novel, The Da Vinci Code. This biography examines Brown's early years, his journey to the top of the New York Times Bestseller List, and his life as the world's number one novelist.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1411643844"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781411643840"
+          }
+        ],
+        "pageCount": 76,
+        "printType": "BOOK",
+        "categories": [
+          "Biography & Autobiography"
+        ],
+        "averageRating": 2,
+        "ratingsCount": 1,
+        "contentVersion": "1.1.0.0.preview.3",
+        "imageLinks": {
+          "smallThumbnail": "http://bks4.books.google.com/books?id=7aPqemZwoi4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://bks4.books.google.com/books?id=7aPqemZwoi4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=7aPqemZwoi4C&printsec=frontcover&dq=dan+brown&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=7aPqemZwoi4C&dq=dan+brown&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Dan_Brown_s_Road_to_Success.html?hl=&id=7aPqemZwoi4C"
+      },
+      "saleInfo": {
+        "country": "SG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "SG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Dan_Brown_s_Road_to_Success-sample-e…4C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=7aPqemZwoi4C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE"
+      },
+      "searchInfo": {
+        "textSnippet": "Dan Brown shocked the world with his fourth novel, The Da Vinci Code. This biography examines Brown&#39;s early years, his journey to the top of the New York Times Bestseller List, and his life as the world&#39;s number one novelist."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "d5xgYw4Ts0gC",
+      "etag": "/TcTKoOogTE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/d5xgYw4Ts0gC",
+      "volumeInfo": {
+        "title": "Angels And Demons",
+        "subtitle": "(Robert Langdon Book 1)",
+        "authors": [
+          "Dan Brown"
+        ],
+        "publisher": "Random House",
+        "publishedDate": "2009-05-14",
+        "description": "Contains a sneak preview of Inferno, Dan Brown's astonishing new Robert Langdon thriller. CERN Institute, Switzerland: a world-renowned scientist is found brutally murdered with a mysterious symbol seared onto his chest. The Vatican, Rome: the College of Cardinals assembles to elect a new pope. Somewhere beneath them, an unstoppable bomb of terrifying power relentlessly counts down to oblivion. In a breathtaking race against time, Harvard professor Robert Langdon must decipher a labyrinthine trail of ancient symbols if he is to defeat those responsible - the Illuminati, a secret brotherhood presumed extinct for nearly four hundred years, reborn to continue their deadly vendetta against their most hated enemy, the Catholic Church.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1409083942"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781409083948"
+          }
+        ],
+        "pageCount": 624,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 306,
+        "contentVersion": "0.7.6.0.preview.2",
+        "imageLinks": {
+          "smallThumbnail": "http://bks6.books.google.com/books?id=d5xgYw4Ts0gC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://bks6.books.google.com/books?id=d5xgYw4Ts0gC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=d5xgYw4Ts0gC&dq=dan+brown&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=d5xgYw4Ts0gC&dq=dan+brown&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Angels_And_Demons.html?hl=&id=d5xgYw4Ts0gC"
+      },
+      "saleInfo": {
+        "country": "SG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "SG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=d5xgYw4Ts0gC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "NONE"
+      },
+      "searchInfo": {
+        "textSnippet": "Contains a sneak preview of Inferno, Dan Brown&#39;s astonishing new Robert Langdon thriller."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "_w0GN2omjaMC",
+      "etag": "gWi6GZKdT14",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/_w0GN2omjaMC",
+      "volumeInfo": {
+        "title": "Angels and Demons",
+        "authors": [
+          "Dan Brown"
+        ],
+        "publishedDate": "2009-03",
+        "description": "An ancient secret brotherhood. A devastating new weapon of destruction. An unthinkable target. When world-renowned Harvard symbologist Robert Langdon is summoned to his first assignment to a Swiss research facility to analyze a mysterious symbol - seared into the chest of a murdered physicist - he discovers evidence of the unimaginable - the resurgence of an ancient secret brotherhood known as the Illuminati. The most powerful underground organization ever to walk the earth. The Illuminati has now surfaced to carry out the final phase of its legendary vendetta against its most hated enemy - the Catholic Church.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1439142351"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781439142356"
+          }
+        ],
+        "pageCount": 572,
+        "printType": "BOOK",
+        "averageRating": 4.5,
+        "ratingsCount": 6,
+        "contentVersion": "0.0.1.0.preview.0",
+        "imageLinks": {
+          "smallThumbnail": "http://bks2.books.google.com/books?id=_w0GN2omjaMC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://bks2.books.google.com/books?id=_w0GN2omjaMC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=_w0GN2omjaMC&q=dan+brown&dq=dan+brown&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=_w0GN2omjaMC&dq=dan+brown&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Angels_and_Demons.html?hl=&id=_w0GN2omjaMC"
+      },
+      "saleInfo": {
+        "country": "SG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "SG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=_w0GN2omjaMC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "NONE"
+      },
+      "searchInfo": {
+        "textSnippet": "&quot;Enough twists and surprises to keep even the most seasoned readers guessing.<br>\n&quot; — Vince Flynn, New York Times bestselling author of Consent to Kill &quot;<b>Dan</b> <br>\n<b>Brown</b> handles the intrigue and action well . . . impeccable. — Daily News (New <br>\nYork)&nbsp;<b>...</b>"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "_xcLc9fkKsYC",
+      "etag": "Iu1cgV34bXY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/_xcLc9fkKsYC",
+      "volumeInfo": {
+        "title": "Dan Brown's \"The Lost Symbol\": The Ultimate Unauthorized and Independent Reading Guide",
+        "authors": [
+          "Alex Carmine"
+        ],
+        "publisher": "Punked Books",
+        "publishedDate": "2009",
+        "description": "Dan Brown's 'The Lost Symbol' was the most anticipated novel of 2009, and was the literary event of the year. Alex Carmine examines all the themes in depth, and provides a chapter-by-chapter analysis of 'The Lost Symbol'. From Alex's assessment of the novel, it is very much apparent that Dan Brown has not only been adhering to his own formula, but that he has also been following Joseph Campbell's concept of the hero's journey. We know that Dan Brown likes to play with the names of his characters, so Alex explores these in great detail. In this way, Alex reveals the name of the real American family upon whom the Solomons are based. Alex also shows that, following its development within 'The Da Vinci Code', Dan Brown's still very much in tune with his 'sacred feminine' side, with his stunning representation of womb envy. Dan Brown's fascinating depiction of masculinity within this novel is studied too. In addition to this, Alex explores the literary devices that Dan Brown employs, and the magical sleights of hand that he uses to make the reader look the wrong way. Indeed, one of the main arguments in this book is that Dan Brown has hidden much of the true meaning of 'The Lost Symbol' behind various veils of allegory, much as the Masons do with regards to their secrets, and like the Symbologist Robert Langdon, Alex reveals these meanings to you. However, Dan Brown is an author who also likes to reward his readers, so Alex examines the clues about the novel that he disseminated prior to publication via Facebook and Twitter. Furthermore, Alex considers the various Masonic practices depicted within the novel, and bring to the fore the conspiracy theories that surround this mysterious fraternity. Alex Carmine's very close reading of the novel literally leaves no stone uncovered, and will transform your own interpretation of the text.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0953317226"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780953317226"
+          }
+        ],
+        "pageCount": 156,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Criticism"
+        ],
+        "averageRating": 4.5,
+        "ratingsCount": 6,
+        "contentVersion": "1.0.0.0.preview.3",
+        "imageLinks": {
+          "smallThumbnail": "http://bks0.books.google.com/books?id=_xcLc9fkKsYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://bks0.books.google.com/books?id=_xcLc9fkKsYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=_xcLc9fkKsYC&printsec=frontcover&dq=dan+brown&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=_xcLc9fkKsYC&dq=dan+brown&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Dan_Brown_s_The_Lost_Symbol_The_Ultimate.html?hl=&id=_xcLc9fkKsYC"
+      },
+      "saleInfo": {
+        "country": "SG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "SG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=_xcLc9fkKsYC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE"
+      },
+      "searchInfo": {
+        "textSnippet": "Indeed, one of the main arguments in this book is that Dan Brown has hidden much of the true meaning of &#39;The Lost Symbol&#39; behind various veils of allegory, much as the Masons do with regards to their secrets, and like the Symbologist Robert ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "SeIalgEACAAJ",
+      "etag": "XUUTTP0l9f4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/SeIalgEACAAJ",
+      "volumeInfo": {
+        "title": "Inferno",
+        "authors": [
+          "Dan Brown"
+        ],
+        "publisher": "Random House Large Print",
+        "publishedDate": "2013-05-14",
+        "description": "In the heart of Italy, Harvard professor of symbology, Robert Langdon, is drawn into a harrowing world centered on one of history's most enduring and mysterious literary masterpieces … Dante's Inferno. Against this backdrop, Langdon battles a chilling adversary and grapples with an ingenious riddle. By the author of The Da Vinci Code. (general fiction). Simultaneous.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0804121060"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780804121064"
+          }
+        ],
+        "pageCount": 752,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 2.5,
+        "ratingsCount": 3,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://bks2.books.google.com/books?id=SeIalgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://bks2.books.google.com/books?id=SeIalgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=SeIalgEACAAJ&dq=dan+brown&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=SeIalgEACAAJ&dq=dan+brown&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Inferno.html?hl=&id=SeIalgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "SG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "SG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=SeIalgEACAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "NONE"
+      },
+      "searchInfo": {
+        "textSnippet": "In the heart of Italy, Harvard professor of symbology, Robert Langdon, is drawn into a harrowing world centered on one of history&#39;s most enduring and mysterious literary masterpieces … Dante&#39;s Inferno."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "m1ajn-WWWdEC",
+      "etag": "1NjFTLwyzso",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/m1ajn-WWWdEC",
+      "volumeInfo": {
+        "title": "The Dan Brown Enigma",
+        "authors": [
+          "Graham A. Thomas"
+        ],
+        "publisher": "John Blake Publishing Ltd",
+        "publishedDate": "2011-04-04",
+        "description": "The Dan Brown Enigma is an insightful look into the world of Dan Brown that will not only enthral and entertain, but will unlock the secrets of one of the world's most exciting and enigmatic writers. Dan Brown is already one of the bestselling authors that the world has ever seen. Due to the success of his gripping novels Digital Fortress, Deception Point, Angels and Demons, The Da Vinci Code and The Lost Symbol, he has become a household name. But how did he achieve this? What's his secret? This in-depth biography reveals how, with a heady mix of science, religion, fact and fiction, he has cap.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1843584581"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781843584582"
+          }
+        ],
+        "pageCount": 345,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Criticism"
+        ],
+        "averageRating": 3,
+        "ratingsCount": 1,
+        "contentVersion": "1.3.3.0.preview.2",
+        "imageLinks": {
+          "smallThumbnail": "http://bks0.books.google.com/books?id=m1ajn-WWWdEC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://bks0.books.google.com/books?id=m1ajn-WWWdEC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=m1ajn-WWWdEC&dq=dan+brown&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=m1ajn-WWWdEC&dq=dan+brown&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/The_Dan_Brown_Enigma.html?hl=&id=m1ajn-WWWdEC"
+      },
+      "saleInfo": {
+        "country": "SG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "SG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=m1ajn-WWWdEC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "NONE"
+      },
+      "searchInfo": {
+        "textSnippet": "The Dan Brown Enigma is an insightful look into the world of Dan Brown that will not only enthral and entertain, but will unlock the secrets of one of the world&#39;s most exciting and enigmatic writers."
+      }
+    }
+  ]
+}
