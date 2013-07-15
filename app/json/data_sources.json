@@ -1,13 +1,56 @@
 {
-  "sources":[
+  "media":[
     {
-      "name": "google",
-      "url": "https://www.googleapis.com/books/v1/volumes?q=dan+brown",
-      "local": "google_books.json"
+      "type": "book",
+      "title": "google",
+      "src": "https://www.googleapis.com/books/v1/volumes?q=dan+brown",
+      "local": "google_books.json",
+      "thumb": "http://placehold.it/53x80",
+      "author": "author name",
+      "rating": "0",
+      "genre": "",
+      "added": "12:00:00",
+      "consumed": "12:10:00",
+      "status": ""
     },
     {
-      "name": "source name",
+      "type": "movie",
+      "title": "movie",
       "src": "source url",
-      "local": "local url"
-    }]
+      "local": "local url",
+      "thumb": "http://placehold.it/53x80",
+      "author": "author name",
+      "rating": "0",
+      "genre": "",
+      "added": "12:00:00",
+      "consumed": "12:10:00",
+      "status": ""
+    },
+    {
+      "type": "tv",
+      "title": "source name",
+      "src": "source url",
+      "local": "local url",
+      "thumb": "http://placehold.it/53x80",
+      "author": "author name",
+      "rating": "0",
+      "genre": "",
+      "added": "12:00:00",
+      "consumed": "12:10:00",
+      "status": ""
+    },
+    {
+      "type": "music",
+      "title": "source name",
+      "src": "source url",
+      "local": "local url",
+      "thumb": "http://placehold.it/53x80",
+      "author": "author name",
+      "rating": "0",
+      "genre": "",
+      "added": "12:00:00",
+      "consumed": "12:10:00",
+      "status": ""
+    }
+  ]
 }
