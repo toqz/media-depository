@@ -1,9 +1,10 @@
 define([
     'angular',
-    'controllers/mainController'
-], function (angular, controllers, services) {
+    'controllers/appControllers'
+], function (angular, controllers) {
     'use strict';
 
-    return angular.module('mediaDepositoryApp', ['mediaDepositoryApp.controllers']);
+    console.log('controllers', controllers);
+    return angular.module('mediaApp', ['mediaApp.controllers']);
 
 });

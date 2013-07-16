@@ -25,14 +25,44 @@
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
+    <header class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <div class="dropdown pull-left">
+                    <a class="brand dropdown-toggle" role="button" data-toggle="dropdown" href="#"> My App </a>
+                </div>
+                <div>
+                    <ul class="nav">
+                        <li>
+                            <a href="#" role="button" class="dropdown-toggle"> Shelves </a>
+                        </li>
+                        <li>
+                            <a href="#getting_started">Add Media</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>    
 
-    <header>
-        <h1>Test App</h1>
-    </header><!-- Header -->
+    <br />
+
+    <div ng-controller="TabsCtrl">
+
+      <tabset>
+        <tab heading="Books" select="loadTabContent('books')">{{tabHeading}}</tab>
+        <tab heading="Movies" select="loadTabContent('Movies')">{{tabHeading}}</tab>
+        <tab heading="Music" select="loadTabContent('Music')">{{tabHeading}}</tab>
+        <tab heading="TV" select="loadTabContent('TV')">{{tabHeading}}</tab>
+      </tabset>
+
+    </div>
+
+
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
-	
+    <!-- <div class="container" ng-view=""></div> -->
+
     <footer>
 
     </footer><!-- #Footer -->
