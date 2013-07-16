@@ -4,13 +4,13 @@ define([
 
     'use strict';
 
-    console.log('underscore version', _.VERSION);
+    console.log('--factory')
 
     var app = angular.module('mediaApp.factory', [])
 
     var services = {};
 
-    services.bookService = function($http) {
+    services.bookService = function($scope, $http) {
       
       console.log('init this factory');
 

@@ -1,10 +1,12 @@
 define([
     'angular',
     'controllers/appControllers'
-], function (angular, controllers) {
+], function (angular) {
     'use strict';
 
-    console.log('controllers', controllers);
+    console.log('--app')
+
+    // Load module dependencies
     return angular.module('mediaApp', ['mediaApp.controllers']);
 
 });

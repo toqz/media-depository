@@ -34,10 +34,10 @@
                 <div>
                     <ul class="nav">
                         <li>
-                            <a href="#" role="button" class="dropdown-toggle"> Shelves </a>
+                            <a href="#shelves" role="button" class="dropdown-toggle"> Shelves </a>
                         </li>
                         <li>
-                            <a href="#getting_started">Add Media</a>
+                            <a href="#add-media">Add Media</a>
                         </li>
                     </ul>
                 </div>
@@ -47,7 +47,10 @@
 
     <br />
 
-    <div ng-controller="TabsCtrl">
+
+    <div class="container" ng-view></div>
+
+<!--<div ng-controller="TabsCtrl">
 
       <tabset>
         <tab heading="Books" select="loadTabContent('books')">{{tabHeading}}</tab>
@@ -56,7 +59,7 @@
         <tab heading="TV" select="loadTabContent('TV')">{{tabHeading}}</tab>
       </tabset>
 
-    </div>
+    </div> -->
 
 
 

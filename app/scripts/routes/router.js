@@ -4,14 +4,24 @@ define([
 ], function (angular, app) {
     'use strict';
 
+    console.log('--router')
+
     app.config(['$routeProvider', function ($routeProvider) {
 
-      $routeProvider.when('/', {
+      $routeProvider
+        .when('/shelves', {
           templateUrl: 'views/main.html',
           controller: 'MainCtrl'
-      });
+        })
 
-      $routeProvider.otherwise({redirectTo: '/'});
+        .when('/add-media', {
+          templateUrl: 'views/add-media.html', 
+          controller: 'AddMediaCtrl'
+        })
+
+      // $routeProvider.when('/shelves', {redirectTo: '/'})
+
+      $routeProvider.otherwise({redirectTo: '/shelves'})
 
     }]);
 
@@ -19,6 +29,8 @@ define([
     app.config(function($httpProvider) {
       delete $httpProvider.defaults.headers.common['X-Requested-With'];
     })
+
+    // console.log(app)
 
     return app;
 

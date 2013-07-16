@@ -4,16 +4,20 @@ define([
 
     'use strict';
 
-    var app = angular.module('mediaApp.services', [])
+    console.log('--services')
 
-    var services = {};
+    var app = angular.module('mediaApp.services', ['ngResource'])
 
-    services.booksModel = function() {
+    var factory = {};
+
+    factory.bookService = function($resource) {
       
+      return $resource('json/data_sources.json', {}, {
+        query: {method:'GET'}
+      });
       
     }
 
-
-    return app.service(services);
+    return app.factory(factory);
 
 });
