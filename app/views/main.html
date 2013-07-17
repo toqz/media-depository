@@ -1,8 +1,41 @@
 
 <div class="row">
 
+    <table class="table">
+      <caption>Caption</caption>
+      <thead>
+        <tr>
+          <th>Cover</th>
+          <th>title</th>
+          <th>author</th>
+          <th>rating</th>
+          <th>shelves</th>
+          <th>date read</th>
+          <th>date added</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr ng-repeat="media in medium">
+          <td>
+            <a class="pull-left" href="{{media.url}}" target="_blank">
+              <img class="media-object" src="{{media.poster}}" />
+            </a>
+          </td>
+          <td>{{media.title}}</td>
+          <td>autdor</td>
+          <td>rating</td>
+          <td>shelves</td>
+          <td>date read</td>
+          <td>date added</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 
     <ul>
-        <!-- <li><h4>{{ books.src }}</h4></li>  -->
         <li class="media" ng-repeat="book in books">
             <a class="pull-left" href="{{ book.src }}" target="_blank">
                 <img class="media-object" src="{{ book.thumb }}">
@@ -12,7 +45,7 @@
                 <p>book.description</p>
             </div>
         </li>
-    </ul><!-- #books list -->
+    </ul>#books list -->
 
 </div>
 

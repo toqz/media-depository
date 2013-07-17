@@ -1,7 +1,9 @@
 define([
     'angular',
-    'controllers/appControllers'
-], function (angular) {
+    'controllers/app-controllers',
+    'angular-cookies',
+    'angular-localStorage'
+], function (angular, localStorage) {
     'use strict';
 
     console.log('--app')

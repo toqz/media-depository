@@ -1,5 +1,8 @@
 SiteMap
 
+Description: I want to create an app that simply and effective records the media I consume. So a good example is Goodreads. That app allows you to indicate what books you've read (and rate and review them), and what books you plan on reading. I'd like that same functionality, but for books, music, movies, magazine articles, blogposts and online articles, etc. If you download Goodreads and search for a book, it'll give you all the info for that book, including a cover image.
+Scope: books, music, movies, magazine articles, blogposts and online articles
+
 My Media Page
 -------------
 
