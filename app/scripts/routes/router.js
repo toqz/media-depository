@@ -7,7 +7,6 @@ define([
     console.log('--router')
 
     app.config(['$routeProvider', function ($routeProvider) {
-
       $routeProvider
         .when('/shelves', {
           templateUrl: 'views/main.html',
@@ -27,6 +26,7 @@ define([
 
     // Temporarily get rid of CORS error
     app.config(function($httpProvider) {
+      // console.log($httpProvider);
       delete $httpProvider.defaults.headers.common['X-Requested-With'];
     })
 

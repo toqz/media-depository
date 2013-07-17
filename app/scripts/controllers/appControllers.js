@@ -11,28 +11,40 @@ define([
 
     var controllers = {}
 
+
+
     controllers.MainCtrl = function($scope, bookService) {
       
-      var books = bookService.query(function() {
+      var results = bookService.query(function() {
 
-        console.log(books.media)
-        $scope.books = books.media;
-
+        $scope.books = results.media;
+      
       });
 
     }
-    
 
-    controllers.AddMediaCtrl = function($scope) {
+
+    controllers.AddMediaCtrl = function($scope, googleService, imdbService) {
 
       $scope.find = function() {
 
-        console.log('search for:' + $scope.keyword)
+        // var results = googleService.query({q: $scope.keyword}, function() {
+
+        //   $scope.medium = results.items;
+
+        // });
+
+  
+        var results = imdbService.query({title: $scope.keyword}, function() {
+
+          console.log(results);
+
+        });
 
       }
 
-
     }
+
 
     return app.controller(controllers);
 });

@@ -9,19 +9,68 @@
 
     <p>initial state: load media from different sources</p>
 
+    <ul class="media-list">
+      <li class="media" ng-repeat="media in medium">
+        <a class="pull-left" href="{{media.volumeInfo.canonicalVolumeLink}}" target="_blank">
+          <img class="media-object" src="{{media.volumeInfo.imageLinks.smallThumbnail}}" />
+        </a>
+        <div class="media-body">
+          <h4 class="media-heading">{{media.volumeInfo.title}}</h4>
+          <p>{{media.volumeInfo.description}}</p>
+        </div>
+      </li>
+    </ul>
+
 </div>
 
+
 <!-- 
-$$hashKey: "005"
-added: "12:00:00"
-author: "author name"
-consumed: "12:10:00"
-genre: ""
-local: "google_books.json"
-rating: "0"
-src: "https://www.googleapis.com/books/v1/volumes?q=dan+brown"
-status: ""
-thumb: "http://placehold.it/53x80"
-title: "google book"
-type: "book"
- -->
+accessInfo: Object
+  accessViewStatus: "SAMPLE"
+  country: "SG"
+  embeddable: true
+  epub: Object
+  pdf: Object
+  publicDomain: false
+  textToSpeechPermission: "ALLOWED"
+  viewability: "PARTIAL"
+  webReaderLink: "http://books.google.com/books/reader?id=ULQbOUx_MiAC&hl=&printsec=frontcover&output=reader&source=gbs_api"
+etag: "N85WdHu30aw"
+id: "ULQbOUx_MiAC"
+kind: "books#volume"
+saleInfo: Object
+  country: "SG"
+  isEbook: false
+  saleability: "NOT_FOR_SALE"
+searchInfo: Object
+  textSnippet: "The novel details the descent into near-starvation of a young intellectual and the downward spiral of misadventures he encounters in the course of trying to find food.
+selfLink: "https://www.googleapis.com/books/v1/volumes/ULQbOUx_MiAC"
+volumeInfo: Object
+  authors: Array[1]
+    0: "Knut Hamsun"
+  averageRating: 3.5
+  canonicalVolumeLink: "http://books.google.com/books/about/Hunger.html?hl=&id=ULQbOUx_MiAC"
+  categories: Array[1]
+    0: "Fiction"
+  contentVersion: "preview-1.0.0"
+  description: "A must-read for fans of modernist literature, Hunger is a literary tour de force that was influenced equally by Dostoyevsky and Zola but made new by author Knut Hamsun's unique creative approach. The novel details the descent into near-starvation of a young intellectual and the downward spiral of misadventures he encounters in the course of trying to find food."
+  imageLinks: Object
+    smallThumbnail: "http://bks7.books.google.com/books?id=ULQbOUx_MiAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+    thumbnail: "http://bks7.books.google.com/books?id=ULQbOUx_MiAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  industryIdentifiers: Array[2]
+    0: Object
+      identifier: "1775419509"
+      type: "ISBN_10"
+    1: Object
+      identifier: "9781775419501"
+      type: "ISBN_13"
+  infoLink: "http://books.google.com/books?id=ULQbOUx_MiAC&dq=hunger&hl=&source=gbs_api"
+  language: "en"
+  pageCount: 282
+  previewLink: "http://books.google.com/books?id=ULQbOUx_MiAC&printsec=frontcover&dq=hunger&hl=&cd=1&source=gbs_api"
+  printType: "BOOK"
+  publishedDate: "2010"
+  publisher: "The Floating Press"
+  ratingsCount: 37
+  title: "Hunger" 
+-->
