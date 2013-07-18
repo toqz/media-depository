@@ -1,9 +1,9 @@
 require([
     'angular',
     'app',
-    'routes/router',
-    'angular-resource'
-    /*'angular-cookies',
+    'routes/router'
+    /*'angular-resource'
+    'angular-cookies',
     'angular-sanitize',*/
 ], function (angular, app) {
     'use strict';

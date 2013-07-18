@@ -10,7 +10,8 @@ var require = {
         'angular-sanitize': '../bower_components/angular-sanitize/angular-sanitize',
         'angular-bootstrap': '../bower_components/angular-bootstrap/ui-bootstrap',
         'angular-bootstrap-tpls': '../bower_components/angular-bootstrap/ui-bootstrap-tpls',
-        'angular-localStorage': '../bower_components/angular-localStorage/src/localFactory'
+        'angular-localStorage': '../bower_components/angular-localStorage/src/localFactory',
+        'angular-collection': '../bower_components/angular-collection/angular-collection'
     },
 
     'shim': {

@@ -1,16 +1,16 @@
 define([
     'angular',
-    'services/api-services'
+    'services/api-services',
+    'services/data-services'
 ], function (angular) {
 
     'use strict'
 
     console.log('--app.controller')
 
-    var app = angular.module('mediaApp.controllers', ['mediaApp.services',  'localStorage'])
+    var app = angular.module('mediaApp.controllers', ['mediaApp.apiServices', 'mediaApp.dataServices'])
 
     var controllers = {}
-
 
     controllers.MainCtrl = function($scope, bookService) {
       
@@ -22,21 +22,22 @@ define([
 
     }
 
+    controllers.AddMediaCtrl = function($scope, $helperService, googleService, imdbService, collection) {
 
-    controllers.AddMediaCtrl = function($scope, $helperService, googleService, imdbService, $store) {
+      var mediaCollection = collection.initCollection();
 
       /*
       * Search Media Content
       **/
       $scope.find = function() {
 
-        var arrMedia = [];
+        // var arrMedia = [];
 
         var googleData = googleService.query({q: $scope.keyword}, function() {
           
           // console.log(googleData.items);
 
-          $helperService.trimApiData(googleData.items, 'google-books', arrMedia)
+          $helperService.trimApiData(googleData.items, 'google-books', mediaCollection)
 
         });
         
@@ -45,12 +46,13 @@ define([
 
           //console.log(data);
 
-          $helperService.trimApiData(imdbData.result, 'imdb', arrMedia);
-          console.log("arrMedia", arrMedia);
+          $helperService.trimApiData(imdbData.result, 'imdb', mediaCollection);
+
+          console.log("mediaCollection", mediaCollection);
 
         });
 
-        $scope.medium = arrMedia;
+        $scope.medium = mediaCollection;
 
       }
 
@@ -61,11 +63,15 @@ define([
 
         console.log("item")
 
+
       }
 
     }
 
+   
 
-    return app.controller(controllers);
+    var controller = app.controller(controllers);
+
+    return controller;
 });
   

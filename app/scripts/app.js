@@ -1,14 +1,23 @@
 define([
     'angular',
-    'controllers/app-controllers',
-    'angular-cookies',
-    'angular-localStorage'
+    'underscore',
+    'controllers/app-controllers'
 ], function (angular, localStorage) {
     'use strict';
 
     console.log('--app')
 
-    // Load module dependencies
-    return angular.module('mediaApp', ['mediaApp.controllers']);
+    var mediaApp = angular.module('mediaApp', ['mediaApp.controllers']);
+
+    var _;
+
+    // Define underscore
+    mediaApp.run(function() {
+
+      _ = window._;
+
+    })
+
+    return mediaApp;
 
 });

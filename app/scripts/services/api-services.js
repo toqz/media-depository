@@ -1,15 +1,18 @@
+/*
+* Api Service
+**/
 define([
-    'angular'
+    'angular',
+    'angular-resource'
 ], function (angular) {
 
     'use strict';
 
-    console.log('--services')
+    console.log('--api services')
 
-    var app = angular.module('mediaApp.services', ['ngResource'])
+    var app = angular.module('mediaApp.apiServices', ['ngResource'])
 
     var factory = {};
-
 
     factory.bookService = function($resource) {
 
@@ -92,7 +95,7 @@ define([
     * Def: IMDB search API
     * Reference: http://mymovieapi.com/
     * sample: http://mymovieapi.com/?title=hunger&type=json&plot=simple&episode=1&limit=1&yg=0&mt=none&lang=en-US&offset=&aka=simple&release=simple&business=0&tech=0
-    * response :
+    * response key: "value", 
         0: Object
           actors: Array[14]
           also_known_as: Array[1]
