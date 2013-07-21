@@ -1,4 +1,3 @@
-var app, express, gzippo;
 
 var gzippo = require('gzippo')
   , express = require('express')
