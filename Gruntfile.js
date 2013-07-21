@@ -330,13 +330,13 @@ module.exports = function (grunt) {
     'clean:dist',
     'useminPrepare',
     'concurrent:dist',
-    'concat',
+    // 'concat',
     'copy',
     'cdnify',
     'ngmin',
     'cssmin',
-    'uglify',
-    'rev',
+    // 'uglify',
+    // 'rev',
     'usemin'
   ]);
 
