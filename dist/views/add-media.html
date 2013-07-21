@@ -1,0 +1,41 @@
+<div class="row">
+
+    <!-- <form name="mediaForm"> -->
+
+      <fieldset>
+        <legend>Add Media</legend>
+        
+        <label>Source</label>
+        <select ng-model="form.src">
+          <option>imdb</option>
+          <option>google-books</option>
+        </select>
+
+        <!-- <input type="text" ng-model="form.name" required/>  -->
+        
+        <label>Title</label>
+        <input type="text" placeholder="Title" ng-model="form.title">
+        
+        <label>Page link</label>
+        <input type="text" placeholder="Page link" ng-model="form.url">
+
+        <label>Poster</label>
+        <input type="text" placeholder="Thumbnail image" ng-model="form.poster">
+
+        <button type="submit" class="btn" ng-click="save();">Submit</button>
+      </fieldset>
+
+    <!-- </form> -->
+
+    <hr>
+    <pre>form={{form}}</pre>
+</div>
+
+<!-- 
+src: src,
+idKey: 'imdb_id',
+idVal: v.imdb_id,
+title: v.title,
+url: v.imdb_url,
+poster: v.poster 
+-->

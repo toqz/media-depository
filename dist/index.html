@@ -13,7 +13,7 @@
 
         <link rel="stylesheet" href="styles/3387645d.main.css">
 </head>
-  <body ng-app="MediaDepositoryApp">
+  <body>
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
@@ -23,33 +23,85 @@
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
+    <header class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <div class="dropdown pull-left">
+                    <a class="brand dropdown-toggle" role="button" data-toggle="dropdown" href="#"> My App </a>
+                </div>
+                <div>
+                    <ul class="nav">
+                        <li>
+                            <a href="#shelves" role="button" class="dropdown-toggle"> Shelves </a>
+                        </li>
+                        <li>
+                            <a href="#search-media">Search Media</a>
+                        </li>
+                        <li>
+                            <a href="#add-media">Add Media</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>    
 
-    <header>
-        <h1>Test App</h1>
-    </header><!-- Header -->
+    <br>
+
+    
+    <div class="container" ng-view=""></div>
+
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
-	
+    <!-- <div class="container" ng-view=""></div> -->
+
     <footer>
 
     </footer><!-- #Footer -->
 	
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
     <script>
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
       g.src='//www.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
+    </script> -->
 
-    <script src="bower_components/angular/angular.js"></script>
 
-    <script src="scripts/4c35f35b.scripts.js"></script>
+    <script src="scripts/require.config.js"></script>
+    <script data-main="main" src="bower_components/requirejs/require.js"></script>
 
-        <script src="scripts/bd6ce9e3.plugins.js"></script>
 
-        <script src="scripts/25e920e4.modules.js"></script>
+    <!-- <script src="bower_components/angular/angular.js"></script> -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js 
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script> -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.2/jquery.min.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-affix.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-alert.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-modal.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-transition.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-button.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-popover.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-typeahead.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-carousel.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-collapse.js"></script>
+    <script src="bower_components/bootstrap-sass/js/bootstrap-tab.js"></script>-->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/modules.js 
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script> -->
+    <!-- endbuild -->
+    
 </body>
 </html>

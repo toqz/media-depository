@@ -1,1 +1,0 @@
-"use strict";angular.module("MediaDepositoryApp",["ngResource"]).config(["$routeProvider",function(a){a.when("/",{templateUrl:"views/main.html",controller:"MainCtrl"}).otherwise({redirectTo:"/"})}]),angular.module("MediaDepositoryApp").controller("MainCtrl",["$scope","$resource",function(a,b){var c=b("movies.json");c.get(function(b){a.d=b})}]);

@@ -1,0 +1,33 @@
+<div class="row">
+
+    <form>
+        <input type="text" ng-model="keyword"> <button ng-click="find()">Search</button>
+    </form>
+
+    <h4>search for : {{ keyword }}</h4>
+    <h4>My List : {{ list }}</h4>
+    <p>initial state: load media from different sources</p>
+
+    <ul class="media-list">
+      <li class="media" ng-repeat="media in medium">
+        <a class="pull-left" href="{{media.url}}" target="_blank">
+          <img class="media-object" src="{{media.poster}}">
+        </a>
+        <div class="media-body">
+          <h4 class="media-heading">{{media.title}}</h4>
+          <p>{{media}}</p>
+          <button type="button" class="btn btn-primary btn-small" ng-click="add()"><i class="icon-plus icon-white"></i>Add</button>
+        </div>
+      </li>
+    </ul>
+
+</div>
+
+<!-- 
+src: src,
+idKey: 'imdb_id',
+idVal: v.imdb_id,
+title: v.title,
+url: v.imdb_url,
+poster: v.poster 
+-->
