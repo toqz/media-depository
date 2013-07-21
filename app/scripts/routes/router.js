@@ -13,6 +13,11 @@ define([
           controller: 'MainCtrl'
         })
 
+        .when('/search-media', {
+          templateUrl: 'views/search-media.html', 
+          controller: 'SearchMediaCtrl'
+        })
+
         .when('/add-media', {
           templateUrl: 'views/add-media.html', 
           controller: 'AddMediaCtrl'

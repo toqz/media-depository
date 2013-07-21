@@ -14,15 +14,29 @@ define([
 
     var factory = {};
 
-    factory.bookService = function($resource) {
+// var endpoint = 'http://media-depository-api.herokuapp.com/media';
+    var endpoint = 'http://localhost:5000\:5000/:m';
 
-      var endpoint = 'json/data_sources.json';
 
-      return $resource(endpoint, {}, {
-        query: {method:'GET'}
-      });
-      
+    factory.getMediaService = function($resource) {
+
+      return $resource(endpoint, {m: 'media'}, {query: {method: 'GET'}});  
+
     }
+
+
+    factory.addMediaService = function($resource) {
+ 
+
+      var Res =  $resource(endpoint, 
+        {m:'addmedia'}, 
+        {addmedia: {method: 'POST'}}
+      ); 
+
+      return Res;
+
+    }
+
 
     /*
     * Def: Google search API

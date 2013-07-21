@@ -2,7 +2,7 @@
 <div class="row">
 
     <table class="table">
-      <caption>Caption</caption>
+      <caption>My List</caption>
       <thead>
         <tr>
           <th>Cover</th>
@@ -20,32 +20,23 @@
         <tr ng-repeat="media in medium">
           <td>
             <a class="pull-left" href="{{media.url}}" target="_blank">
-              <img class="media-object" src="{{media.poster}}" />
+              <img class="media-object" src="http://placehold.it/25x25" />
             </a>
           </td>
-          <td>{{media.title}}</td>
-          <td>autdor</td>
+          <td>
+            <a class="pull-left" href="{{media.url}}" target="_blank">
+              {{media.title}}
+            </a>
+          </td>
+          <td>author</td>
           <td>rating</td>
           <td>shelves</td>
           <td>date read</td>
           <td>date added</td>
-          <td></td>
+          <td><input type="checkbox" /></td>
         </tr>
       </tbody>
     </table>
-
-    <!-- 
-    <ul>
-        <li class="media" ng-repeat="book in books">
-            <a class="pull-left" href="{{ book.src }}" target="_blank">
-                <img class="media-object" src="{{ book.thumb }}">
-            </a>
-            <div class="media-body">
-                <h4 class="media-heading">{{ book.title }}</h4>
-                <p>book.description</p>
-            </div>
-        </li>
-    </ul>#books list -->
 
 </div>
 

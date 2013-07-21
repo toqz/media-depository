@@ -12,39 +12,41 @@ define([
 
     var controllers = {}
 
-    controllers.MainCtrl = function($scope, bookService) {
-      
-      var results = bookService.query(function() {
 
-        $scope.books = results.media;
+    /*
+    * My Media List Controller 
+    **/
+    controllers.MainCtrl = function($scope, getMediaService) {
       
-      });
+      // console.log(getMediaService.query());
+
+      var results = getMediaService.query({m: 'media'}, function() {
+
+        $scope.medium = results.media;
+        // console.log('media', $scope.medium);
+      })
 
     }
 
-    controllers.AddMediaCtrl = function($scope, $helperService, googleService, imdbService, collection) {
+
+    /*
+    * Browse & Add Media Controller 
+    **/
+    controllers.SearchMediaCtrl = function($scope, $helperService, googleService, imdbService, collection) {
 
       var mediaCollection = collection.initCollection();
 
-      /*
-      * Search Media Content
-      **/
+      /** Search Media Content **/
       $scope.find = function() {
-
-        // var arrMedia = [];
 
         var googleData = googleService.query({q: $scope.keyword}, function() {
           
-          // console.log(googleData.items);
-
           $helperService.trimApiData(googleData.items, 'google-books', mediaCollection)
 
         });
         
         
         var imdbData = imdbService.query({title: $scope.keyword}, function() {
-
-          //console.log(data);
 
           $helperService.trimApiData(imdbData.result, 'imdb', mediaCollection);
 
@@ -56,22 +58,57 @@ define([
 
       }
 
-      /*
-      * Add Media Content to storage 
-      **/
-      $scope.add = function() {
-
-        console.log("item")
-
-
-      }
 
     }
 
-   
+
+    /*
+    * Add Media Controller 
+    **/
+    controllers.AddMediaCtrl = function($scope, addMediaService) {
+      
+      var master = {
+        src: 'imdb',
+        title: 'Hunger Games',
+        url: 'http://googl.com',
+        poster: 'http://plachold.it/25x25'
+      };
+
+      $scope.form = master;
+
+      $scope.cancel = function() {
+
+        $scope.form = angular.copy(master);
+
+      }
+
+      $scope.save = function() {
+
+        master = $scope.form;
+
+        var m = addMediaService.addmedia(master ,function() {
+
+          console.log('message, m');
+
+        });
+        
+        // newMedia = new Media({m:'addmedia', d:'data'})
+
+        // console.log(newMedia);
+
+        // newMedia.$save();
+        // $scope.cancel();
+      }
+      
+      // console.log('mediaForm:', $scope.form );
+
+    }
+
 
     var controller = app.controller(controllers);
 
     return controller;
 });
+
+
   

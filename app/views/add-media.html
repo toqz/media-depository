@@ -1,27 +1,35 @@
 
 <div class="row">
 
-    <form>
-        <input type="text" ng-model="keyword"/> <button ng-click="find()">Search</button>
-    </form>
+    <!-- <form name="mediaForm"> -->
 
-    <h4>search for : {{ keyword }}</h4>
-    <h4>My List : {{ list }}</h4>
-    <p>initial state: load media from different sources</p>
+      <fieldset>
+        <legend>Add Media</legend>
+        
+        <label>Source</label>
+        <select ng-model="form.src">
+          <option>imdb</option>
+          <option>google-books</option>
+        </select>
 
-    <ul class="media-list">
-      <li class="media" ng-repeat="media in medium">
-        <a class="pull-left" href="{{media.url}}" target="_blank">
-          <img class="media-object" src="{{media.poster}}" />
-        </a>
-        <div class="media-body">
-          <h4 class="media-heading">{{media.title}}</h4>
-          <p>{{media}}</p>
-          <button type="button" class="btn btn-primary btn-small" ng-click="add()" ><i class="icon-plus icon-white"></i>Add</button>
-        </div>
-      </li>
-    </ul>
+        <!-- <input type="text" ng-model="form.name" required/>  -->
+        
+        <label>Title</label>
+        <input type="text" placeholder="Title" ng-model="form.title">
+        
+        <label>Page link</label>
+        <input type="text" placeholder="Page link" ng-model="form.url">
 
+        <label>Poster</label>
+        <input type="text" placeholder="Thumbnail image" ng-model="form.poster">
+
+        <button type="submit" class="btn" ng-click="save();">Submit</button>
+      </fieldset>
+
+    <!-- </form> -->
+
+    <hr />
+    <pre>form={{form}}</pre>
 </div>
 
 <!-- 
