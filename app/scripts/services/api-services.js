@@ -14,8 +14,8 @@ define([
 
     var factory = {};
 
-    var endpoint = 'http://media-depository-api.herokuapp.com/:m';
-    // var endpoint = 'http://localhost:5000\:5000/:m';
+    var endpoint = 'http://media-depository-api.herokuapp.com/:m/:id';
+    // var endpoint = 'http://localhost:5000\:5000/:m/:id';
 
 
     factory.getMediaService = function($resource) {
@@ -27,10 +27,32 @@ define([
 
     factory.addMediaService = function($resource) {
  
-
       var Res =  $resource(endpoint, 
-        {m:'addmedia'}, 
+        {m:'media'}, 
         {addmedia: {method: 'POST'}}
+      ); 
+
+      return Res;
+
+    }
+
+
+    factory.deleteMediaService = function($resource) {
+ 
+      var Res =  $resource(endpoint, 
+        {m:'media'}, 
+        {deletemedia: {method: 'DELETE'}}
+      ); 
+
+      return Res;
+
+    }
+
+    factory.updateMediaService = function($resource) {
+ 
+      var Res = $resource(endpoint, 
+        {m:'media', id: '000'},
+        {save: {method: 'PUT'}}
       ); 
 
       return Res;

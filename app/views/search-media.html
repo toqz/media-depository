@@ -12,12 +12,11 @@
     <ul class="media-list">
       <li class="media" ng-repeat="media in medium">
         <a class="pull-left" href="{{media.url}}" target="_blank">
-          <img class="media-object" src="{{media.poster}}" />
+          <img class="media-object" src="{{media.poster}}" width="50" />
         </a>
         <div class="media-body">
           <h4 class="media-heading">{{media.title}}</h4>
-          <p>{{media}}</p>
-          <button type="button" class="btn btn-primary btn-small" ng-click="add()" ><i class="icon-plus icon-white"></i>Add</button>
+          <button type="button" class="btn btn-primary btn-small" ng-click="addMedia({ind:$index})" ><i class="icon-plus icon-white"></i>Add</button>
         </div>
       </li>
     </ul>

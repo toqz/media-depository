@@ -20,7 +20,7 @@
         <tr ng-repeat="media in medium">
           <td>
             <a class="pull-left" href="{{media.url}}" target="_blank">
-              <img class="media-object" src="http://placehold.it/25x25" />
+              <img class="media-object" src="{{media.poster}}" width="50"/>
             </a>
           </td>
           <td>
@@ -28,14 +28,22 @@
               {{media.title}}
             </a>
           </td>
-          <td>author</td>
-          <td>rating</td>
+          <td>{{media.author}}</td>
+          <td>
+            <select ng-model="media.rating" style="width:50px" ng-change="mediaList.setRating({ind:$index});">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
           <td>shelves</td>
           <td>date read</td>
           <td>date added</td>
           <td>
-            <a href="javascript:void(0);" ng-click="mediaList.edit();"><i class="icon-pencil"></i></a>
-            <a href="javascript:void(0);" ng-click="mediaList.remove();"><i class="icon-trash"></i></a></td>
+            <a href="javascript:void(0);" ng-click="mediaList.edit({ind:$index});"><i class="icon-pencil"></i></a>
+            <a href="javascript:void(0);" ng-click="mediaList.remove({ind:$index});"><i class="icon-trash"></i></a></td>
         </tr>
       </tbody>
     </table>

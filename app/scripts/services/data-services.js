@@ -26,8 +26,6 @@ define([
 
       this.addCollection = function() {
 
-        
-
       }
 
 

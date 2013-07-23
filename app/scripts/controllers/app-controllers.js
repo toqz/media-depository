@@ -12,28 +12,55 @@ define([
 
     var controllers = {}
 
+    var mediaSchema = {
+        src: 'source',
+        title: 'Media Title',
+        url: 'http://www.mediaurl.com',
+        poster: 'http://plachold.it/25x25'
+      };
 
     /*
     * My Media List Controller 
     **/
-    controllers.MainCtrl = function($scope, getMediaService) {
+    controllers.MainCtrl = function($scope, getMediaService, deleteMediaService, updateMediaService) {
       
-      // console.log(getMediaService.query());
-
       var results = getMediaService.query({m: 'media'}, function() {
 
         $scope.medium = results.media;
-        // console.log('media', $scope.medium);
-      })
+
+      });
 
       $scope.mediaList = {
 
-        edit: function() {
-          alert('edit');
+        edit: function(item) {
+
+          alert('edit media');
+
         },
 
-        remove: function() {
-          alert('remove');
+        remove: function(item) {
+
+          var itemId = $scope.medium[item.ind]._id;
+
+          deleteMediaService.delete({id: itemId}, function(res) {
+
+            console.log('res', res);
+
+          });
+
+        },
+
+        setRating: function(item) {
+
+          var media = $scope.medium[item.ind]
+          // console.log(media);
+
+          updateMediaService.save({id: media._id}, media, function(res) {
+
+            console.log('res', res);
+
+          });
+
         }
 
       }
@@ -44,7 +71,7 @@ define([
     /*
     * Browse & Add Media Controller 
     **/
-    controllers.SearchMediaCtrl = function($scope, $helperService, googleService, imdbService, collection) {
+    controllers.SearchMediaCtrl = function($scope, $helperService, googleService, imdbService, collection, addMediaService) {
 
       var mediaCollection = collection.initCollection();
 
@@ -70,6 +97,24 @@ define([
 
       }
 
+      $scope.addMedia = function(selected) {
+        
+        var selectedMedia = $scope.medium[selected.ind];
+
+        mediaSchema.src = selectedMedia.src;
+        mediaSchema.title = selectedMedia.title;
+        mediaSchema.url = selectedMedia.url;
+        mediaSchema.poster = selectedMedia.poster;
+
+        // console.log('mediaSchema', mediaSchema);
+
+        addMediaService.addmedia(mediaSchema ,function(res) {
+
+          console.log('resource', res.success);
+
+        });
+
+      }
 
     }
 
@@ -104,16 +149,8 @@ define([
 
         });
         
-        // newMedia = new Media({m:'addmedia', d:'data'})
-
-        // console.log(newMedia);
-
-        // newMedia.$save();
-        // $scope.cancel();
       }
       
-      // console.log('mediaForm:', $scope.form );
-
     }
 
 
