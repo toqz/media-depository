@@ -245,7 +245,8 @@ module.exports = function (grunt) {
             '.htaccess',
             'bower_components/**/*',
             'images/{,*/}*.{gif,webp,svg}',
-            'styles/fonts/*'
+            'styles/fonts/*',
+            'scripts/**/*'
           ]
         }, {
           expand: true,
@@ -322,8 +323,8 @@ module.exports = function (grunt) {
   grunt.registerTask('test', [
     'clean:server',
     'concurrent:test',
-    'connect:test',
-    'karma'
+    'connect:test'
+    // 'karma'
   ]);
 
   grunt.registerTask('build', [
@@ -333,15 +334,15 @@ module.exports = function (grunt) {
     'concat',
     'copy',
     'cdnify',
-    'ngmin',
+    // 'ngmin',
     'cssmin',
-    'uglify',
-    'rev',
+    // 'uglify',
+    // 'rev',
     'usemin'
   ]);
 
   grunt.registerTask('default', [
-    'jshint',
+    // 'jshint',
     'test',
     'build'
   ]);
