@@ -1,8 +1,6 @@
-var app, express, gzippo;
-
-var gzippo = require('gzippo')
-  , express = require('express')
-  , app
+var express = require('express');
+var gzippo = require('gzippo');
+var app;
 
 app = express();
 
