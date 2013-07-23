@@ -26,6 +26,18 @@ define([
         // console.log('media', $scope.medium);
       })
 
+      $scope.mediaList = {
+
+        edit: function() {
+          alert('edit');
+        },
+
+        remove: function() {
+          alert('remove');
+        }
+
+      }
+
     }
 
 
