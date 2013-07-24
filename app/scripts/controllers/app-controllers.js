@@ -1,14 +1,15 @@
 define([
     'angular',
     'services/api-services',
-    'services/data-services'
+    'services/data-services',
+    'directives'
 ], function (angular) {
 
     'use strict'
 
     console.log('--app.controller')
 
-    var app = angular.module('mediaApp.controllers', ['mediaApp.apiServices', 'mediaApp.dataServices'])
+    var app = angular.module('mediaApp.controllers', ['mediaApp.apiServices', 'mediaApp.dataServices', 'mediaApp.directives'])
 
     var controllers = {}
 
@@ -26,7 +27,8 @@ define([
       
       var results = getMediaService.query({m: 'media'}, function() {
 
-        $scope.medium = results.media;
+        console.log(results.total);
+        $scope.medium = results.results;
 
       });
 
@@ -57,7 +59,7 @@ define([
 
           updateMediaService.save({id: media._id}, media, function(res) {
 
-            console.log('res', res);
+            console.log('res', res.media);
 
           });
 

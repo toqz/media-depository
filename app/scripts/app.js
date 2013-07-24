@@ -2,7 +2,7 @@ define([
     'angular',
     'underscore',
     'controllers/app-controllers'
-], function (angular, localStorage) {
+], function (angular) {
     'use strict';
 
     console.log('--app')

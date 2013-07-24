@@ -8,9 +8,11 @@ define([
 
     var directives = {};
 
-    directives.myDirective = function($scope) {
-      
-      
+    directives.pagination = function() {
+      return{
+        restrict: "E",
+        template: "<div>pagination</div>"
+      }
     }
 
 
