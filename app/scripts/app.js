@@ -1,22 +1,18 @@
 define([
     'angular',
+    'angular-ui',
     'underscore',
-    'controllers/app-controllers'
+    'controllers/app-controllers',
+    'directives/directives',
 ], function (angular) {
+
     'use strict';
 
-    console.log('--app')
+    console.log('--app');
 
-    var mediaApp = angular.module('mediaApp', ['mediaApp.controllers']);
+    var _ = window._;
 
-    var _;
-
-    // Define underscore
-    mediaApp.run(function() {
-
-      _ = window._;
-
-    })
+    var mediaApp = angular.module('mediaApp', ['ui', 'mediaApp.controllers', 'mediaApp.directives']);
 
     return mediaApp;
 

@@ -17,7 +17,10 @@
       </thead>
 
       <tbody>
-        <tr ng-repeat="media in medium">
+        <tr ui-if="loadingDataIsDone">
+          <td colspan="8"><div pagination></div></td>
+        </tr>
+        <tr ng-repeat="media in data.results">
           <td>
             <a class="pull-left" href="{{media.url}}" target="_blank">
               <img class="media-object" src="{{media.poster}}" width="50"/>
@@ -45,6 +48,7 @@
             <a href="javascript:void(0);" ng-click="mediaList.edit({ind:$index});"><i class="icon-pencil"></i></a>
             <a href="javascript:void(0);" ng-click="mediaList.remove({ind:$index});"><i class="icon-trash"></i></a></td>
         </tr>
+
       </tbody>
     </table>
 

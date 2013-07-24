@@ -1,8 +1,7 @@
 define([
     'angular',
     'services/api-services',
-    'services/data-services',
-    'directives'
+    'services/data-services'
 ], function (angular) {
 
     'use strict'
@@ -24,15 +23,21 @@ define([
     * My Media List Controller 
     **/
     controllers.MainCtrl = function($scope, getMediaService, deleteMediaService, updateMediaService) {
-      
-      var results = getMediaService.query({m: 'media'}, function() {
-
-        console.log(results.total);
-        $scope.medium = results.results;
-
-      });
 
       $scope.mediaList = {
+
+        getList: function(page) {
+       
+          var results = getMediaService.query({m: 'media', limit: 3, skip: 3}, function() {
+
+            // console.log('curpage:', page);
+            $scope.data = results;
+
+            $scope.loadingDataIsDone = true;
+
+          });
+
+        },
 
         edit: function(item) {
 
@@ -42,7 +47,7 @@ define([
 
         remove: function(item) {
 
-          var itemId = $scope.medium[item.ind]._id;
+          var itemId = $scope.data.results[item.ind]._id;
 
           deleteMediaService.delete({id: itemId}, function(res) {
 
@@ -54,7 +59,7 @@ define([
 
         setRating: function(item) {
 
-          var media = $scope.medium[item.ind]
+          var media = $scope.data.results[item.ind]
           // console.log(media);
 
           updateMediaService.save({id: media._id}, media, function(res) {
@@ -66,6 +71,9 @@ define([
         }
 
       }
+
+      // Controller init
+      $scope.mediaList.getList();
 
     }
 

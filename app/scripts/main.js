@@ -1,11 +1,12 @@
 require([
+    'jquery',
     'angular',
     'app',
-    'routes/router'
+    'routes/router',
     /*'angular-resource'
     'angular-cookies',
     'angular-sanitize',*/
-], function (angular, app) {
+], function (jQuery, angular, app) {
     'use strict';
 
     console.log('--main');
