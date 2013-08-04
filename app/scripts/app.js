@@ -1,9 +1,10 @@
 define([
     'angular',
     'angular-ui',
-    'underscore',
-    'controllers/app-controllers',
+    'services/data-services',
+    'services/api-services',
     'directives/directives',
+    'controllers/app-controllers'
 ], function (angular) {
 
     'use strict';
@@ -12,8 +13,6 @@ define([
 
     var _ = window._;
 
-    var mediaApp = angular.module('mediaApp', ['ui', 'mediaApp.controllers', 'mediaApp.directives']);
-
-    return mediaApp;
+    return angular.module('mediaApp', ['ui', 'mediaApp.controllers', 'mediaApp.directives']);
 
 });

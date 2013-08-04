@@ -14,8 +14,8 @@ define([
 
     var factory = {};
 
-    var endpoint = 'http://media-depository-api.herokuapp.com/:m/:id';
-    // var endpoint = 'http://localhost:5000\:5000/:m/:id';
+    // var endpoint = 'http://media-depository-api.herokuapp.com/:m/:id';
+    var endpoint = 'http://localhost:5000\:5000/:m/:id';
 
 
     factory.getMediaService = function($resource) {
