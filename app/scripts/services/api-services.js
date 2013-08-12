@@ -10,6 +10,8 @@ define([
 
     console.log('--api services')
 
+    var sources=[];
+
     var app = angular.module('mediaApp.apiServices', ['ngResource'])
 
     var factory = {};
@@ -24,6 +26,42 @@ define([
     }
 
     
+    factory.mediaSourcesFactory = function($resource) {
+
+      var endpoint = 'https://www.googleapis.com/books/v1/volumes',
+          apiKey = 'AIzaSyBv4NXTFEWZQmDe3-R_XLCLSNQF0PgoKqY',
+          maxResults = 10,
+          keyword = 'default';
+
+      var params = {
+            endpoint: 'https://www.googleapis.com/books/v1/volumes',
+            key: '',
+            queryParams: {
+              maxResults: '',
+              type : 'json',
+              limit : 10,
+              offset: 0,
+              lang : 'en-US',
+              business : 0,
+              tech : 0,
+              title : 'default search parameter'
+            }
+          }
+
+      return $resource(endpoint, {q: keyword, maxResults: 10, key: apiKey}, {query: {method: 'GET'}});
+
+      // var googleData = googleService.query({q: $scope.keyword}, function() {
+
+    }
+
+
+    factory.booksFactory =  function($resource){
+
+
+
+    }
+
+
     factory.googleService = function($resource) {
 
       var endpoint = 'https://www.googleapis.com/books/v1/volumes',
@@ -31,32 +69,36 @@ define([
           maxResults = 10,
           keyword = 'default';
 
+
       return $resource(endpoint, {q: keyword, maxResults: 10, key: apiKey}, {query: {method: 'GET'}});
 
+      // var googleData = googleService.query({q: $scope.keyword}, function() {
     }
 
 
     factory.imdbService = function($resource) {
       
       var params = {
-        endpoint: 'http://mymovieapi.com/',
-        queryParams: {
-          type : 'json',
-          limit : 10,
-          offset: 0,
-          lang : 'en-US',
-          business : 0,
-          tech : 0,
-          title : 'default search parameter'
-        },
-        method: {
-          query: {
-            method: 'GET'
+            endpoint: 'http://mymovieapi.com/',
+            queryParams: {
+              type : 'json',
+              limit : 10,
+              offset: 0,
+              lang : 'en-US',
+              business : 0,
+              tech : 0,
+              title : 'default search parameter'
+            },
+            method: {
+              query: {
+                method: 'GET'
+              }
+            }
           }
-        }
-      }
 
       return $resource(params.endpoint, params.queryParams, params.method);
+
+      // var imdbData = imdbService.query({title: $scope.keyword}, function() 
       // return $resource(params.endpoint, {q: 'hunger', type: 'json', maxResults: 10});
     }
 

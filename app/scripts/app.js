@@ -28,7 +28,15 @@ define([
 
         .when('/search-media', {
           templateUrl: 'views/search-media.html', 
-          controller: 'SearchMediaCtrl'
+          controller: 'SearchMediaCtrl',
+          resolve: {
+            getMediaSources: function($http){
+              return $http.get('scripts/json/sources.json').success(function(response){
+                // console.log('response', response.sources);
+                return response;
+              });
+            }
+          }
         })
 
         .when('/add-media', {

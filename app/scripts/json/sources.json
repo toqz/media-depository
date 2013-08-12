@@ -1,0 +1,38 @@
+{
+  "sources":[
+    {
+      "type": "book",
+      "source": "google",
+      "params": {
+        "endpoint": "https://www.googleapis.com/books/v1/volumes",
+        "key": "",
+        "queryParams": {
+          "maxResults": "",
+          "type" : "json",
+          "limit" : 10,
+          "offset": 0,
+          "lang" : "en-US",
+          "business" : 0,
+          "tech" : 0,
+          "title" : "default search parameter"
+        }
+      }
+    },
+    {
+      "type": "movie",
+      "source": "imdb",
+      "params": {
+        "endpoint": "http://mymovieapi.com/",
+        "queryParams": {
+          "type" : "json",
+          "limit" : 10,
+          "offset": 0,
+          "lang" : "en-US",
+          "business" : 0,
+          "tech" : 0,
+          "title" : "default search parameter"
+        }
+      }
+    }
+  ]
+}

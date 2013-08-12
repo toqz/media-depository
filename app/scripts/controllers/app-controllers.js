@@ -79,7 +79,11 @@ define([
     /*
     * Browse & Add Media Controller 
     **/
-    controllers.SearchMediaCtrl = function($scope, $helperService, googleService, imdbService, collection, mediaFactory) {
+    controllers.SearchMediaCtrl = function($scope, $routeParams, getMediaSources, $helperService, googleService, imdbService, collection, mediaFactory) {
+
+      console.log('$routeParams');
+
+      $scope.sources = getMediaSources.data.sources;
 
       var mediaCollection = collection.initCollection();
 
@@ -87,8 +91,6 @@ define([
 
       /** Search Media Content **/
       $scope.find = function() {
-
-        console.log('find')
 
         var googleData = googleService.query({q: $scope.keyword}, function() {
           
