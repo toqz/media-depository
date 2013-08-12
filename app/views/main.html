@@ -1,6 +1,10 @@
 
 <div class="row">
 
+    <!-- <div ui-if="loadingDataIsDone">
+      <pagination num-pages="7" current-page="2"></pagination>
+    </div> -->
+
     <table class="table">
       <caption>My List</caption>
       <thead>
@@ -17,9 +21,6 @@
       </thead>
 
       <tbody>
-        <tr ui-if="loadingDataIsDone">
-          <td colspan="8"><div pagination></div></td>
-        </tr>
         <tr ng-repeat="media in data.results">
           <td>
             <a class="pull-left" href="{{media.url}}" target="_blank">

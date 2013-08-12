@@ -23,7 +23,7 @@ define([
       }
 
       bookService.addItem = function(item) {
-        console.log('add item ', item);
+        // console.log('add item ', item);
         books.push(item);
       }
 

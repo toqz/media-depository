@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title></title>
@@ -14,6 +14,9 @@
         <!-- build:css({.tmp,app}) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+
+        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+
 </head>
   <body>
     <!--[if lt IE 7]>
@@ -34,7 +37,7 @@
                 <div>
                     <ul class="nav">
                         <li>
-                            <a href="#shelves" role="button" class="dropdown-toggle"> Shelves </a>
+                            <a href="#shelves"> Shelves </a>
                         </li>
                         <li>
                             <a href="#search-media">Search Media</a>
@@ -72,7 +75,7 @@
 
 
     <!--script src="scripts/require.config.js"></script-->
-    <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+    <!--script data-main="scripts/main" src="bower_components/requirejs/require.js"></script-->
 
 
     <!-- <script src="bower_components/angular/angular.js"></script> -->

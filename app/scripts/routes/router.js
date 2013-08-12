@@ -1,7 +1,7 @@
 define([
     'angular',
     'app'
-], function (angular, app) {
+], function (angular, mediaApp) {
     'use strict';
 
     console.log('--router')

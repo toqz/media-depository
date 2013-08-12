@@ -2,32 +2,55 @@
 <div class="row">
 
     <form>
-        <input type="text" ng-model="keyword"/> <button ng-click="find()">Search</button>
+        <fieldset>
+          <label>
+            <div class="input-append">
+              <input class="span3" id="appendedInputButtons" type="text" ng-model="keyword">
+              <button class="btn" type="button" ng-click="find()">Search</button>
+            </div>
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" name="chkmediatype" value="books" ng-model="search.type.books"> Books
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" name="movies" value="movies" ng-model="search.type.movies"> Movies
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" name="music" value="music" ng-model="search.type.music"> Music
+          </label>
+          <label class="checkbox inline">
+            <input type="checkbox" name="tv" value="tv" ng-model="search.type.tv"> TV
+          </label>
+        </fieldset>
     </form>
 
-    <h4>search for : {{ keyword }}</h4>
-    <h4>My List : {{ list }}</h4>
-    <p>initial state: load media from different sources</p>
+    <pre>Search = {{search | json}}</pre>
+    <pre>Keyword = {{keyword}}</pre>
+</div>
 
-    <ul class="media-list">
-      <li class="media" ng-repeat="media in medium">
-        <a class="pull-left" href="{{media.url}}" target="_blank">
-          <img class="media-object" src="{{media.poster}}" width="50" />
+<div class="row">
+
+  <div class="span3">
+    
+    
+  </div>
+
+  <div class="span9">
+    Right
+
+  </div>
+
+
+    <ul class="media-list">  
+      <li class="media" ng-repeat="medium in media">
+        <a class="pull-left" href="{{medium.url}}" target="_blank">
+          <img class="media-object" src="{{medium.poster}}" width="50" />
         </a>
         <div class="media-body">
-          <h4 class="media-heading">{{media.title}}</h4>
+          <h4 class="media-heading">{{medium.title}}</h4>
           <button type="button" class="btn btn-primary btn-small" ng-click="addMedia({ind:$index})" ><i class="icon-plus icon-white"></i>Add</button>
         </div>
       </li>
     </ul>
 
 </div>
-
-<!-- 
-src: src,
-idKey: 'imdb_id',
-idVal: v.imdb_id,
-title: v.title,
-url: v.imdb_url,
-poster: v.poster 
--->

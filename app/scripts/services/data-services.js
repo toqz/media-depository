@@ -21,20 +21,17 @@ define([
         // get service data || localstorage || init
         this.data = [];
 
-        return this.data;  
+        return this.data;
+
       }
 
       this.addCollection = function() {
 
       }
 
-
-      
       return this;
+
     }
-
-
-
 
     return app.factory(factory);
 

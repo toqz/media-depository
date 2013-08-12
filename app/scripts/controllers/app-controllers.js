@@ -2,13 +2,14 @@ define([
     'angular',
     'services/api-services',
     'services/data-services'
+    // 'factories/factory'
 ], function (angular) {
 
     'use strict'
 
     console.log('--app.controller')
 
-    var app = angular.module('mediaApp.controllers', ['mediaApp.apiServices', 'mediaApp.dataServices', 'mediaApp.directives'])
+    var app = angular.module('mediaApp.controllers', ['mediaApp.apiServices', 'mediaApp.dataServices']);
 
     var controllers = {}
 
@@ -22,21 +23,20 @@ define([
     /*
     * My Media List Controller 
     **/
-    controllers.MainCtrl = function($scope, getMediaService, deleteMediaService, updateMediaService) {
+    controllers.MainCtrl = function($scope, mediaFactory) {
 
       $scope.mediaList = {
 
         getList: function(page) {
-       
-          var results = getMediaService.query({m: 'media', limit: 3, skip: 3}, function() {
+          
+          var results = mediaFactory.get(function() {
 
-            // console.log('curpage:', page);
             $scope.data = results;
 
-            $scope.loadingDataIsDone = true;
+          //   $scope.loadingDataIsDone = true;
 
           });
-
+          
         },
 
         edit: function(item) {
@@ -49,7 +49,7 @@ define([
 
           var itemId = $scope.data.results[item.ind]._id;
 
-          deleteMediaService.delete({id: itemId}, function(res) {
+          mediaFactory.delete({id: itemId}, function(res) {
 
             console.log('res', res);
 
@@ -59,10 +59,9 @@ define([
 
         setRating: function(item) {
 
-          var media = $scope.data.results[item.ind]
-          // console.log(media);
+          var media = $scope.data.results[item.ind];
 
-          updateMediaService.save({id: media._id}, media, function(res) {
+          mediaFactory.update({id: media._id}, media, function(res) {
 
             console.log('res', res.media);
 
@@ -77,53 +76,52 @@ define([
 
     }
 
-
     /*
     * Browse & Add Media Controller 
     **/
-    controllers.SearchMediaCtrl = function($scope, $helperService, googleService, imdbService, collection, addMediaService) {
+    controllers.SearchMediaCtrl = function($scope, $helperService, googleService, imdbService, collection, mediaFactory) {
 
       var mediaCollection = collection.initCollection();
+
+      $scope.media = [];
 
       /** Search Media Content **/
       $scope.find = function() {
 
+        console.log('find')
+
         var googleData = googleService.query({q: $scope.keyword}, function() {
           
-          $helperService.trimApiData(googleData.items, 'google-books', mediaCollection)
+          $helperService.trimApiData(googleData.items, 'google-books', mediaCollection);
+          // console.log("mediaCollection", mediaCollection);
 
         });
-        
         
         var imdbData = imdbService.query({title: $scope.keyword}, function() {
 
           $helperService.trimApiData(imdbData.result, 'imdb', mediaCollection);
 
-          console.log("mediaCollection", mediaCollection);
-
+          // console.log('mediaCollection:', mediaCollection);
         });
 
-        $scope.medium = mediaCollection;
+        $scope.media = mediaCollection;
 
       }
 
+
       $scope.addMedia = function(selected) {
-        
-        var selectedMedia = $scope.medium[selected.ind];
+        var selectedMedia = $scope.media[selected.ind];
 
         mediaSchema.src = selectedMedia.src;
         mediaSchema.title = selectedMedia.title;
         mediaSchema.url = selectedMedia.url;
         mediaSchema.poster = selectedMedia.poster;
 
-        // console.log('mediaSchema', mediaSchema);
+        mediaFactory.save(mediaSchema ,function(res) {
 
-        addMediaService.addmedia(mediaSchema ,function(res) {
-
-          console.log('resource', res.success);
+          console.log('resource saved: ', res.success);
 
         });
-
       }
 
     }
@@ -132,7 +130,7 @@ define([
     /*
     * Add Media Controller 
     **/
-    controllers.AddMediaCtrl = function($scope, addMediaService) {
+    controllers.AddMediaCtrl = function($scope, mediaFactory) {
       
       var master = {
         src: 'imdb',
@@ -153,7 +151,7 @@ define([
 
         master = $scope.form;
 
-        var m = addMediaService.addmedia(master ,function() {
+        var m = mediaFactory.addmedia(master ,function() {
 
           console.log('message, m');
 
